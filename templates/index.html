@@ -1,0 +1,19 @@
+<!-- index.html -->
+
+{% extends "base.html" %}
+
+
+
+{% block title %}Drowsiness Detection{% endblock %}
+
+{% block head %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h1>Drowsiness Detection</h1>
+    <form action="/run_drowsiness_detection" method="post" class="center">
+        <input type="submit" value="Go">
+    </form>
+{% endblock %}
